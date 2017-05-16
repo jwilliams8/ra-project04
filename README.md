@@ -1,4 +1,5 @@
-# RaProject04
+# ra-project04
+Repository for Project 4 - Cohabitant Website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
@@ -26,3 +27,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+May 13th, 2017
+- Created angular project, initialized git repo, structured directory with necessary components
+
+May 14th, 2017
+-Created HTML And CSS for Home view.
+
+May 15th, 2017
+-Created HTML And CSS for Adventure post view as well as Jorunal list view.
+
+May 16th, 2017
+-tbd...

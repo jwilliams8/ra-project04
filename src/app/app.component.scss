@@ -1,0 +1,270 @@
+$primary-color: #548683;
+$secondary-color: #ce9869;
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'NovecentoSans', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 300;
+}
+h3 {
+	color: $secondary-color;
+	font-size: 1.4rem;
+	padding-bottom: 1.8rem;
+	letter-spacing: 2px;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	height: 90vh;
+	background: url('../assets/logos/inhabitent-logo-full.svg') center center / 22%  no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home-hero.jpg') center 0 / cover  no-repeat;
+}
+
+footer {
+	background: url('../assets/dark-wood@2x.png') center center / cover no-repeat;
+	color: #fff;
+	img {
+		margin-left: auto;
+		height: 60px;
+	}
+	li {
+		font-size: 1.1rem;
+		padding-bottom: 1.8rem;
+	}
+	li:last-child {
+		padding-bottom: 0;
+	}
+	i {
+		color: #fff;
+	}
+	a {
+		padding-right: .5rem;
+		text-decoration: none;
+		color: #fff;
+	}
+	p {
+		font-family: NovecentoSans;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		padding-bottom: 2rem;
+	}
+	a:hover, i:hover {
+		color: $primary-color;
+	}
+}
+
+nav {
+	background-color: rgba(0,0,0,0);
+	padding: .8rem 0;
+	height: 40px;
+	li {
+		color: #fff;
+		text-transform: uppercase;
+		padding-left: 20px;
+		font-size: 1.1rem;
+		font-family: NovecentoSans;
+		display: inline;
+	}
+	li:hover {
+		color: $primary-color;
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		height:40px;
+	}
+}
+
+@font-face{
+	font-family: 'NovecentoSans';
+	src: url(../assets/fonts/Novecento/Novecentosanswide-Normal.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'NovecentoSans';
+	src:url(../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf);
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+  	font-family: 'Merriweather';
+  	font-style: normal;
+  	font-weight: 700;
+	src:url(../assets/fonts/Merriweather/Merriweather-Bold.ttf);
+}
+@font-face {
+  	font-family: 'Merriweather';
+ 	font-style: italic;
+ 	font-weight: 700;
+	src:url(../assets/fonts/Merriweather/Merriweather-BoldItalic.ttf);
+}
+@font-face {
+ 	font-family: 'Merriweather';
+ 	font-style: normal;
+ 	font-weight: 300;
+	src:url(../assets/fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  	font-family: 'Merriweather';
+  	font-style: italic;
+  	font-weight: 300;
+	src:url(../assets/fonts/Merriweather/Merriweather-LightItalic.ttf);
+}
+
+.container {
+	padding: 0 5rem;
+}
+.category {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #d6d6d6;
+	border-top: 5px solid #d6d6d6;
+	width: 23%;
+	padding: 1rem;
+	box-sizing: border-box;
+	img {
+		height: 80px;
+	}
+	p {
+		line-height: 1.8rem;
+		font-size: 1.1rem;
+		padding: 1.5rem 0;
+	}
+}
+
+.entry {
+	width: 32%;
+	border: 1px solid #d6d6d6;
+	img {
+		height: 280px;
+	}
+	h3 {
+		color: $primary-color;
+	}
+	p {
+		font-size: .8rem;
+		padding: 10px 0;
+	}
+}
+
+.entry-image-1 {
+	background: url('../assets/blog-photos/van-camper.jpg') center center / cover no-repeat;
+	height: 250px;
+}
+.entry-image-2 {
+	background: url('../assets/blog-photos/warm-cocktail.jpg') center center / cover no-repeat;
+	height: 250px;
+}
+.entry-image-3{
+	background: url('../assets/blog-photos/healthy-camp-food.jpg') center center / cover no-repeat;
+	height: 250px;
+}
+.adventure-col {
+	width: 49%;
+	height: 600px;
+	color: #fff;
+}
+.adventure-post {
+	padding: 1.5rem;
+	box-sizing: border-box;
+	h2 {
+		font-family: 'Merriweather', serif;
+		text-transform: none;
+		padding: 2.5rem 0 1rem;
+		line-height: 3.5rem;
+	}
+}
+.adventure-image-1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/canoe-girl.jpg') center center / cover no-repeat;
+	h2 {
+		font-size: 3.4rem;
+		line-height: 4.2rem;
+	}
+}
+.adventure-image-2{
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/beach-bonfire.jpg') center center / cover no-repeat;
+}
+.adventure-image-3{
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/mountain-hikers.jpg') center center / cover no-repeat;
+	width: 48%;
+}
+.adventure-image-4{
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/night-sky.jpg') center center / cover no-repeat;
+	width: 48%;
+}
+.adventure-image-3 h2, .adventure-image-4 h2 {
+	font-size: 2rem;
+	line-height: 2.4rem;
+}
+.row {
+	height: 48%;
+}
+.journal-data {
+	border-top: 5px solid #d6d6d6;
+	padding: 15px;
+}
+.adventure .green-btn {
+	margin: 2rem 0 4rem;
+	font-size: 1.4rem;
+}
+.green-btn {
+	padding: .8rem 1.6rem;
+	background-color: $primary-color;
+	color: #fff;
+	border: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.black-btn {
+	padding: .8rem 1.6rem;
+	background-color: rgba(255,255,255,0);
+	color: #000;
+	border: 1px solid #000;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.white-btn {
+	padding: .8rem 1.6rem;
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.font-bold {
+	font-weight: 700;
+}
+.text-center {
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+.flex-col {
+	flex-direction: column;
+}
+.flex-justify-content-between {
+	justify-content: space-between;
+}
+.flex-align-items-center {
+	align-items: center;
+}
+.lrg-padding-right {
+	padding-right: 5rem;
+}
+.lrg-padding-tb {
+	padding: 5rem 0;
+}
+
