@@ -1,41 +1,25 @@
 # ra-project04
 Repository for Project 4 - Cohabitant Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+This is my submission for our fourth marked project in web development at Red Academy. Our goal is to replicate a blog based website using Angular where we pull blogs from a database and create the ability to post new blog entries to the same database, in turn updating the list of blog posts being displayed on the website. Our focus is to completely utilize Angular for component structure, and typescript to carry out all of our javascript functionality. 
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Project Development
 
 May 13th, 2017
-- Created angular project, initialized git repo, structured directory with necessary components
+- Created angular project, initialized git repo, structured directory with necessary components.
 
 May 14th, 2017
--Created HTML And CSS for Home view.
+- Created HTML And CSS for Home view.
 
 May 15th, 2017
--Created HTML And CSS for Adventure post view as well as Jorunal list view.
+- Created HTML And CSS for Adventure post view as well as Jorunal list view.
 
 May 16th, 2017
--tbd...
+- Implemented routing between components to display different content on the SPA based on the click of a link/button
+
+May 17th, 2017
+- Created Array of journal objects to be used within multiple components in order to display a dynamixc list of the latest and full list of blog posts/journals.
+
+May 18th, 2017
+- Dynamially updated Journal list page while looping through the journal array.
+

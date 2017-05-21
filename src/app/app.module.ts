@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeShopComponent } from './view/home-view/home-shop/home-shop.component';
@@ -12,6 +13,9 @@ import { HeaderComponent } from './view/home-view/header/header.component';
 import { HomeViewComponent } from './view/home-view/home-view.component';
 import { AdventureViewComponent } from './view/adventure-view/adventure-view.component';
 import { BlogListViewComponent } from './view/blog-list-view/blog-list-view.component';
+import { AppRoutingModule }     from './app-routing.module';
+import { BlogService } from './services/blog.service';
+
 
 @NgModule({
   declarations: [
@@ -28,9 +32,11 @@ import { BlogListViewComponent } from './view/blog-list-view/blog-list-view.comp
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+}

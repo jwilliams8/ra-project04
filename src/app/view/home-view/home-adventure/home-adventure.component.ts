@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogPost } from '../../../model/blog-post'
 
 @Component({
   selector: 'app-home-adventure',
   templateUrl: './home-adventure.component.html',
-  styleUrls: ['../../../app.component.scss']
 })
 export class HomeAdventureComponent implements OnInit {
 
-  constructor() { }
+  //journalArray = BlogPost.journalArray;
+
+  constructor() {}
 
   ngOnInit() {
   }

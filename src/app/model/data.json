@@ -1,0 +1,154 @@
+{
+0: {
+ID: 47,
+title: "this has a real value",
+content: "some test post",
+categories: [
+"awesome",
+"kitty",
+"Uncategorized"
+],
+image: false,
+date: "May 16, 2017",
+author: ""
+},
+1: {
+ID: 36,
+title: "Again, not Jeremy",
+content: "This is the content of the document",
+categories: [
+"awesome",
+"kitty",
+"Uncategorized"
+],
+image: false,
+date: "May 16, 2017",
+author: ""
+},
+2: {
+ID: 34,
+title: "this is not Jose",
+content: "who do you think i am",
+categories: [
+"awesome",
+"kitty",
+"Uncategorized"
+],
+image: "http://portal.helloitscody.com/inhabitent/wp-content/uploads/2017/05/google-amp-fast-speed-travel-ss-1920.jpg",
+date: "May 16, 2017",
+author: ""
+},
+3: {
+ID: 32,
+title: "This is not Jeremy, I swear",
+content: "Really, that was so last year",
+categories: [
+"Uncategorized",
+"web dev"
+],
+image: false,
+date: "May 16, 2017",
+author: ""
+},
+4: {
+ID: 30,
+title: "This is not Jeremy, I swear",
+content: "Really, that was so last year",
+categories: [
+"Uncategorized",
+"web dev"
+],
+image: false,
+date: "May 16, 2017",
+author: ""
+},
+5: {
+ID: 22,
+title: "This is not Jeremy, I swear",
+content: "Really, that was so last year",
+categories: [
+"Uncategorized",
+"web dev"
+],
+image: false,
+date: "May 16, 2017",
+author: ""
+},
+6: {
+ID: 20,
+title: "Welcome to a test post",
+content: "hello kitty",
+categories: [
+"puppy",
+"sports",
+"Uncategorized"
+],
+image: false,
+date: "May 16, 2017",
+author: ""
+},
+7: {
+ID: 18,
+title: "this has a real value",
+content: "some test post",
+categories: [
+"awesome",
+"kitty",
+"Uncategorized"
+],
+image: false,
+date: "May 16, 2017",
+author: ""
+},
+8: {
+ID: 15,
+title: "this has a real value",
+content: "some test post",
+categories: [
+"awesome",
+"kitty",
+"Uncategorized"
+],
+image: "http://portal.helloitscody.com/inhabitent/wp-content/uploads/2017/05/Nike-Logo-Free-PNG-Image-2.png",
+date: "May 13, 2017",
+author: ""
+},
+9: {
+ID: 12,
+title: "this has a real value",
+content: "some test post",
+categories: [
+"awesome",
+"kitty",
+"Uncategorized"
+],
+image: "http://portal.helloitscody.com/inhabitent/wp-content/uploads/2017/05/Nike-Logo-Free-PNG-Image-1.png",
+date: "May 13, 2017",
+author: ""
+},
+10: {
+ID: 10,
+title: "this has a real value",
+content: "some test post",
+categories: [
+"awesome",
+"kitty",
+"Uncategorized"
+],
+image: "http://portal.helloitscody.com/inhabitent/wp-content/uploads/2017/05/Nike-Logo-Free-PNG-Image.png",
+date: "May 13, 2017",
+author: ""
+},
+11: {
+ID: 1,
+title: "Hello world!",
+content: "Welcome to WordPress. This is your first post. Edit or delete it, then start writing!",
+categories: [
+"Uncategorized"
+],
+image: false,
+date: "May 12, 2017",
+author: "admin_inhabitent"
+},
+count: 12
+}
