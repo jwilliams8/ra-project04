@@ -18,8 +18,14 @@ May 16th, 2017
 - Implemented routing between components to display different content on the SPA based on the click of a link/button
 
 May 17th, 2017
-- Created Array of journal objects to be used within multiple components in order to display a dynamixc list of the latest and full list of blog posts/journals.
+- Created Array of journal objects to be used within multiple components in order to display a dynamic list of the latest and full list of blog posts/journals.
 
 May 18th, 2017
 - Dynamially updated Journal list page while looping through the journal array.
+
+May 20th, 2017
+- Created form through HTML and implemented a post function to communicate new journal creations to database.
+
+May 23rd, 2017
+- Updated routing to send the selected article ID from the journal list page into the URL so that it can be used in the journal detail page in order to loop through the journals array and display the correct journal detail information.  
 

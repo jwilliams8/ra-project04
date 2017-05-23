@@ -264,6 +264,9 @@ nav {
 .font-bold {
   font-weight: 700; }
 
+.font-dark-grey {
+  color: #404040; }
+
 .text-center {
   text-align: center; }
 
@@ -284,3 +287,6 @@ nav {
 
 .lrg-padding-tb {
   padding: 5rem 0; }
+
+.border-top-grey {
+  border-top: 1px solid #afafaf; }

@@ -52,11 +52,11 @@ h3 {
 
 header {
 	height: 90vh;
-	background: url('../assets/logos/inhabitent-logo-full.svg') center center / 22%  no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/home-hero.jpg') center 0 / cover  no-repeat;
+	background: url('./assets/logos/inhabitent-logo-full.svg') center center / 22%  no-repeat, linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/home-hero.jpg') center 0 / cover  no-repeat;
 }
 
 footer {
-	background: url('../assets/dark-wood@2x.png') center center / cover no-repeat;
+	background: url('./assets/dark-wood@2x.png') center center / cover no-repeat;
 	color: #fff;
 	img {
 		margin-left: auto;
@@ -114,13 +114,13 @@ nav {
 
 @font-face{
 	font-family: 'NovecentoSans';
-	src: url(../assets/fonts/Novecento/Novecentosanswide-Normal.ttf);
+	src: url(./assets/fonts/Novecento/Novecentosanswide-Normal.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face{
 	font-family: 'NovecentoSans';
-	src:url(../assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf);
+	src:url(./assets/fonts/Novecento/Novecentosanswide-DemiBold.ttf);
 	font-weight: 700;
 	font-style: normal;
 }
@@ -128,25 +128,25 @@ nav {
   	font-family: 'Merriweather';
   	font-style: normal;
   	font-weight: 700;
-	src:url(../assets/fonts/Merriweather/Merriweather-Bold.ttf);
+	src:url(./assets/fonts/Merriweather/Merriweather-Bold.ttf);
 }
 @font-face {
   	font-family: 'Merriweather';
  	font-style: italic;
  	font-weight: 700;
-	src:url(../assets/fonts/Merriweather/Merriweather-BoldItalic.ttf);
+	src:url(./assets/fonts/Merriweather/Merriweather-BoldItalic.ttf);
 }
 @font-face {
  	font-family: 'Merriweather';
  	font-style: normal;
  	font-weight: 300;
-	src:url(../assets/fonts/Merriweather/Merriweather-Light.ttf);
+	src:url(./assets/fonts/Merriweather/Merriweather-Light.ttf);
 }
 @font-face {
   	font-family: 'Merriweather';
   	font-style: italic;
   	font-weight: 300;
-	src:url(../assets/fonts/Merriweather/Merriweather-LightItalic.ttf);
+	src:url(./assets/fonts/Merriweather/Merriweather-LightItalic.ttf);
 }
 
 .container {
@@ -188,15 +188,15 @@ nav {
 }
 
 .entry-image-1 {
-	background: url('../assets/blog-photos/van-camper.jpg') center center / cover no-repeat;
+	background: url('./assets/blog-photos/van-camper.jpg') center center / cover no-repeat;
 	height: 250px;
 }
 .entry-image-2 {
-	background: url('../assets/blog-photos/warm-cocktail.jpg') center center / cover no-repeat;
+	background: url('./assets/blog-photos/warm-cocktail.jpg') center center / cover no-repeat;
 	height: 250px;
 }
 .entry-image-3{
-	background: url('../assets/blog-photos/healthy-camp-food.jpg') center center / cover no-repeat;
+	background: url('./assets/blog-photos/healthy-camp-food.jpg') center center / cover no-repeat;
 	height: 250px;
 }
 .adventure-col {
@@ -216,21 +216,21 @@ nav {
 	}
 }
 .adventure-image-1 {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/canoe-girl.jpg') center center / cover no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/adventure-photos/canoe-girl.jpg') center center / cover no-repeat;
 	h2 {
 		font-size: 3.4rem;
 		line-height: 4.2rem;
 	}
 }
 .adventure-image-2{
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/beach-bonfire.jpg') center center / cover no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/adventure-photos/beach-bonfire.jpg') center center / cover no-repeat;
 }
 .adventure-image-3{
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/mountain-hikers.jpg') center center / cover no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/adventure-photos/mountain-hikers.jpg') center center / cover no-repeat;
 	width: 48%;
 }
 .adventure-image-4{
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/adventure-photos/night-sky.jpg') center center / cover no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/adventure-photos/night-sky.jpg') center center / cover no-repeat;
 	width: 48%;
 }
 .adventure-image-3 h2, .adventure-image-4 h2 {
@@ -275,6 +275,9 @@ nav {
 .font-bold {
 	font-weight: 700;
 }
+.font-dark-grey {
+	color: #404040;
+}
 .text-center {
 	text-align: center;
 }
@@ -297,4 +300,6 @@ nav {
 .lrg-padding-tb {
 	padding: 5rem 0;
 }
-
+.border-top-grey {
+	border-top: 1px solid #afafaf;
+}

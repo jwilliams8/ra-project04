@@ -15,6 +15,7 @@ import { AdventureViewComponent } from './view/adventure-view/adventure-view.com
 import { BlogListViewComponent } from './view/blog-list-view/blog-list-view.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { BlogService } from './services/blog.service';
+import { FormComponent } from './view/adventure-view/form/form.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { BlogService } from './services/blog.service';
     HeaderComponent,
     HomeViewComponent,
     AdventureViewComponent,
-    BlogListViewComponent
+    BlogListViewComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

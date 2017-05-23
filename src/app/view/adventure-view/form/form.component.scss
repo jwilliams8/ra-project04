@@ -1,0 +1,54 @@
+.adventure-container {
+	width: 65%;
+	margin: 0 auto;
+	color: #404040;
+	position: relative;
+}
+.form-entry {
+	h2 {
+		padding-bottom: 2rem;
+	    color: #548683;
+	}
+	textarea {
+		width: 85%;
+	}
+	input {
+		width: 48.5%;
+	}
+	select {
+		width: 12%;
+		text-align: center;
+	}
+	button {
+		margin-top: 1.5rem;
+		border-radius: 5px;
+	}
+}
+.form-row-1 {
+	padding-bottom: 1.5rem;
+}
+.form-field{
+	font-size: 1.1rem;
+	background-color: #efefef;
+	border-radius: 5px;
+	border-style: none;
+	padding: .5rem;
+	box-sizing: border-box;
+    line-height: 1.5rem;
+    border: 1px solid #afafaf;
+}
+p {
+	padding: 1rem 0;
+	line-height: 2rem;
+	font-size: 1.1rem;
+}
+h2 {
+	font-weight: 700;
+	font-size: 2.8rem;
+	letter-spacing: .15rem;
+	color: #404040;
+}
+
+button {
+	margin:.7rem 0 0;
+}

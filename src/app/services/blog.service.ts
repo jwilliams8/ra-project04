@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
 import { BlogPost } from '../model/blog-post';
 import { AllBlogPosts } from '../model/all-blog-posts'; 
 import { AppComponent } from '../app.component'
@@ -11,15 +13,15 @@ export class BlogService {
 
   	constructor (private http: Http) {}
 
-    blogPostsUrl = 'http://portal.helloitscody.com/inhabitent/api/get/94a08da1fecbb6e8b46990538c7b50b2/';
+    blogGetPostsUrl = 'http://portal.helloitscody.com/inhabitent/api/get/94a08da1fecbb6e8b46990538c7b50b2/';
 
     getBlogPosts(): Promise<BlogPost[]> {
     	let newPromise: any =  
-    	this.http.get(this.blogPostsUrl).toPromise()
+    	this.http.get(this.blogGetPostsUrl).toPromise()
     	let resolvedPromise = Promise.resolve(newPromise.then(this.successFn).catch(this.failureFn));
     	return resolvedPromise;
    }
-
+   
 	failureFn (error) {
 		console.log(error);
 	}
@@ -35,4 +37,22 @@ export class BlogService {
     	console.log(error);
     }
 
+    putJournal(dataParams){
+    	console.log(dataParams);
+    	let newData;
+    	for (var key in dataParams){
+    		newData = dataParams[key];
+    	}
+    	console.log(newData);
+    	let postUrl = 'http://portal.helloitscody.com/inhabitent/api/post/94a08da1fecbb6e8b46990538c7b50b2?params=' + newData;
+        return this.http
+        .post(postUrl, Option).toPromise()
+    	.then(res => res.json().data)
+    	.catch(this.handleError);
+    }
+
+    getJournal(id: number): Promise<BlogPost> {
+  		return this.getBlogPosts()
+        .then(blogPost => blogPost.find(journal => journal.id === id));
+	}
 }

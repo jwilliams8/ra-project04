@@ -8,8 +8,9 @@ import { BlogListViewComponent }  from './view/blog-list-view/blog-list-view.com
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: HomeViewComponent },
-  { path: 'adventure-post', component: AdventureViewComponent },
-  { path: 'journal-list',     component: BlogListViewComponent}
+  { path: 'journal-list',     component: BlogListViewComponent},
+  { path: 'adventure-post/:id', component: AdventureViewComponent},
+  { path: 'adventure-post', component: AdventureViewComponent}
 ];
 
 @NgModule({

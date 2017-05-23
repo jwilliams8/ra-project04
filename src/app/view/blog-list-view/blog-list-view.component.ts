@@ -13,7 +13,6 @@ export class BlogListViewComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-  	console.log(this.journalArray);
   }
 
 }
