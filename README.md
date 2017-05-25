@@ -29,3 +29,8 @@ May 20th, 2017
 May 23rd, 2017
 - Updated routing to send the selected article ID from the journal list page into the URL so that it can be used in the journal detail page in order to loop through the journals array and display the correct journal detail information.  
 
+May 24th, 2017
+- Incorporated dynamic journal posts on the homepage which lead to a full journal detail page when the "Read Entry" button is clicked.
+
+May 25th, 2017
+- Added a journal interface and imported into the journal model to ensure that when the model was being referenced, it was adhering strictly to the imported interface. Added an Enum for the category list to allow categores to be displayed in the select window as well as for the added ability to selected multiple categories and have them display as an array within the article post data.

@@ -187,18 +187,6 @@ nav {
 	}
 }
 
-.entry-image-1 {
-	background: url('./assets/blog-photos/van-camper.jpg') center center / cover no-repeat;
-	height: 250px;
-}
-.entry-image-2 {
-	background: url('./assets/blog-photos/warm-cocktail.jpg') center center / cover no-repeat;
-	height: 250px;
-}
-.entry-image-3{
-	background: url('./assets/blog-photos/healthy-camp-food.jpg') center center / cover no-repeat;
-	height: 250px;
-}
 .adventure-col {
 	width: 49%;
 	height: 600px;
@@ -244,8 +232,8 @@ nav {
 	border-top: 5px solid #d6d6d6;
 	padding: 15px;
 }
-.adventure .green-btn {
-	margin: 2rem 0 4rem;
+.journal .green-btn {
+	margin: 2rem 0 0;
 	font-size: 1.4rem;
 }
 .green-btn {
@@ -294,6 +282,9 @@ nav {
 .flex-align-items-center {
 	align-items: center;
 }
+.flex-justify-center {
+	justify-content: center;
+}
 .lrg-padding-right {
 	padding-right: 5rem;
 }
@@ -302,4 +293,7 @@ nav {
 }
 .border-top-grey {
 	border-top: 1px solid #afafaf;
+}
+.overflow-hidden {
+	overflow: hidden;
 }

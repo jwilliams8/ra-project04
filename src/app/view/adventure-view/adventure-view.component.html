@@ -23,5 +23,29 @@
 	<button class="black-btn"><i class="fa fa-pinterest" aria-hidden="true"></i>
  Pin</button>
 </section>
+<section class="adventure-container lrg-padding-tb border-top-grey form-entry">
+	<h2>Create a Journal Entry</h2>
+	<form id="apiForm" method="post" #apiForm="ngForm">
+		<div class="form-row-1 flex flex-justify-content-between">
+			<input type="text" id ="title" name="title" placeholder="Title" class="form-field">
+			<input type="text" id="image" name="image" placeholder="Image Link" class="form-field" required>
+		</div>
+		<div class="form-row-2 flex flex-justify-content-between">
+			<textarea name="content" id="content" class="form-field" rows="5" placeholder="Content" required></textarea>
+			<select multiple id="categories" name="categories" (change)="parseSelectedValue($event.target.value)" class="form-field" required>
+				<option disabled="disabled">--select--</option>
+				<option *ngFor="let name of categories" [value]="name">{{ name }}</option>
+			</select>
+		</div>
+		<button class="green-btn" type="button" name="submit" id="submit" (click)="submitForm($event)">Submit <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+	</form>
+</section>
 
-<app-form></app-form>
+<div class="modal form-modal-hide">
+	<div class="modal-bg flex flex-justify-center flex-align-items-center">
+		<div class="modal-box flex flex-col flex-justify-center">
+			<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+			<p>Your entry has been submitted</p>
+		</div>
+	</div>
+</div>

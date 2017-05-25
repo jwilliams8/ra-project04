@@ -1,4 +1,5 @@
 import { BlogService } from '../../services/blog.service'
+import { CategoryEnum } from '../../model/category-enum.enum'
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params }   from '@angular/router';
 import { Location }                 from '@angular/common';
@@ -17,12 +18,23 @@ export class AdventureViewComponent implements OnInit {
   
   storedId: number;
   storedJournal;
-  journalArray = BlogPost.journalArray;  
+  journalArray = BlogPost.journalArray;
+  categories: Array<string>;
+  categoryValue: CategoryEnum;
+  CategoryEnum: typeof CategoryEnum = CategoryEnum;
 
   ngOnInit(): void {
 
+  const x = CategoryEnum;
+  const options = Object.keys(x);
+  this.categories = options.slice(options.length / 2);
+
   this.route.params
     .subscribe(params => this.storeTheId(params['id']));
+  }
+
+  parseSelectedValue(value: string) {
+  	this.categoryValue = CategoryEnum[value];
   }
 
   storeTheId(id:number): any {

@@ -1,11 +1,14 @@
+import { HomeAdventureComponent } from '../view/home-view/home-adventure/home-adventure.component';
+import { IBlog } from './iblog';
+
 export class BlogPost {
-	id:number = 0;
-	title:string = "";
-	content:string = "";
-	categories:string= "";
-	image:string = "";
-	date: string = ""
-	author:string = "";
+	id:number;
+	title:string;
+	content:string;
+	categories:string;
+	image:string;
+	date: string;
+	author:string;
 	static journalArray = [];
 
 	constructor(id: number = 0, title:string = "", content:string = "", categories:string = "", image:string = "", date:string = "", author:string = ""){

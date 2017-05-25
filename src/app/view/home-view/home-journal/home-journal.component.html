@@ -1,32 +1,14 @@
 <section class="journal container">
 	<h2 class="lrg-padding-tb text-center">Inhabitent Journal</h2>
 	<div class="journal-entries flex flex-justify-content-between">
-		<div class="entry">
-			<div class="entry-image-1">
-			</div>
+	    <div class="entry" *ngFor="let journal of journalArray | slice:0:3">
+			<img src="{{ journal.image }}">
 			<div class="journal-data">
-				<p>14 April 2017 / Comments</p>
-				<h3>Van Camping Photo Contest</h3>
-				<button class="black-btn">Read Entry</button>
-			</div>
-		</div>
-		<div class="entry">
-			<div class="entry-image-2">
-			</div>
-			<div class="journal-data">
-				<p>2 April 2017 / 0 Comments</p>
-				<h3>Fireside Locations: 3 Warm Cocktail Recipies</h3>
-				<button class="black-btn">Read Entry</button>
-			</div>
-		</div>
-		<div class="entry">
-			<div class="entry-image-3">
-			</div>
-			<div class="journal-data">
-				<p>31 March 2017 / 0 Comments</p>
-				<h3>How To: Eating Healthy Meals In The Wild</h3>
-				<button class="black-btn">Read Entry</button>
+				<p>{{ journal.date }}</p>
+				<h3>{{ journal.title }}</h3>
+				<a [routerLink]="['/adventure-post', journal.id]"><button class="black-btn" data-id="{{ journal.id }}">Read Entry</button></a>
 			</div>
 		</div>
 	</div>
+	<a routerLink="/journal-list"><button class="green-btn">More Journals</button></a>
 </section>
