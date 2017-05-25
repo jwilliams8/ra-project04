@@ -14,11 +14,12 @@ export class BlogService {
 
   	constructor (private http: Http) {}
 
-    blogGetPostsUrl = 'http://portal.helloitscody.com/inhabitent/api/get/94a08da1fecbb6e8b46990538c7b50b2/';
+    //getUrl = 'http://portal.helloitscody.com/inhabitent/api/get/94a08da1fecbb6e8b46990538c7b50b2/';
+    getUrl = 'https://www.edapostol.com/proxy/proxy.php?url=http://portal.helloitscody.com/inhabitent/api/get/94a08da1fecbb6e8b46990538c7b50b2/';
 
     getBlogPosts(): Promise<BlogPost[]> {
     	let newPromise: any =  
-    	this.http.get(this.blogGetPostsUrl).toPromise()
+    	this.http.get(this.getUrl).toPromise()
     	let resolvedPromise = Promise.resolve(newPromise.then(this.successFn).catch(this.failureFn));
     	return resolvedPromise;
    }
@@ -28,10 +29,12 @@ export class BlogService {
 	}
 
     successFn (response) {
-		let journals = response.json();
+		let journals = response._body;
 		console.log(journals);
-		BlogPost.createArray(journals);
-		console.log(BlogPost.journalArray)
+		let journalsData = JSON.parse(journals);
+		console.log(journalsData);
+		console.log(journalsData.contents)
+		BlogPost.createArray(journalsData.contents);
 	}  
 
   	handleError(error) {
